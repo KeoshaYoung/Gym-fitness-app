@@ -1,10 +1,10 @@
-User.create!(name: "Rocky", email: "Rocky@example.com", password_digest: "...", image_url: "https://upload.wikimedia.org/wikipedia/en/5/53/Rocky_balboa.jpeg", gym_id: 1)
+User.create!(name: "Rocky", email: "Rocky@example.com", password: "password", image_url: "https://upload.wikimedia.org/wikipedia/en/5/53/Rocky_balboa.jpeg", gym_id: 1)
 
-User.create!(name: "Apollo", email: "Apollo@example.com", password_digest: "...", image_url: "https://upload.wikimedia.org/wikipedia/en/8/81/Apollo_creed_promo.jpg", gym_id: 1)
+User.create!(name: "Apollo", email: "Apollo@e: "password", image_url: "https://upload.wikimedia.org/wikipedia/en/8/81/Apollo_creed_promo.jpg", gym_id: 1)
 
-User.create!(name: "Ivan", email: "Ivan@example.com", password_digest: "...", image_url: "https://static.wikia.nocookie.net/rocky/images/5/5c/Capture-0.PNG/revision/latest?cb=20181007110924", gym_id: 2)
+User.create!(name: "Ivan", email: "Ivan@e: "password", image_url: "https://static.wikia.nocookie.net/rocky/images/5/5c/Capture-0.PNG/revision/latest?cb=20181007110924", gym_id: 2)
 
-User.create!(name: "Viktor", email: "Viktor@example.com", password_digest: "...", image_url: "https://static.wikia.nocookie.net/rocky/images/a/af/Viktordrago.PNG/revision/latest?cb=20181110005844", gym_id: 2)
+User.create!(name: "Viktor", email: "Viktor@e: "password", image_url: "https://static.wikia.nocookie.net/rocky/images/a/af/Viktordrago.PNG/revision/latest?cb=20181110005844", gym_id: 2)
 
 Exercise.create!(name: "Plank", description: "1) Begin in the plank position, face down with your forearms and toes on the floor. Your elbows are directly under your shoulders and your forearms are facing forward. Your head is relaxed and you should be looking at the floor.
 
