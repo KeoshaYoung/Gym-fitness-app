@@ -10,3 +10,12 @@ Content-Type: application/json
   "image_url": "https://mtsusidelines.com/wp-content/uploads/2018/11/Creed-2-1.jpg",
   "gym_id": 1
 }
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "Ivan@example.com",
+  "password": "password"
+}
