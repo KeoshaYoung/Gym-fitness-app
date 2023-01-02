@@ -1,0 +1,12 @@
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Adonis",
+  "email": "Adonis@example.com",
+  "password": "password",
+  "password_confirmation": "password",
+  "image_url": "https://mtsusidelines.com/wp-content/uploads/2018/11/Creed-2-1.jpg",
+  "gym_id": 1
+}
