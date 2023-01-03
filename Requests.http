@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzI3OTE5OTB9.geCUdBuaywGk1UIUh-p02H2K_jQX0roqK9RUGdWjOvI
+
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
@@ -20,13 +22,33 @@ Content-Type: application/json
   "password": "password"
 }
 
-### Photos create
-POST http://localhost:3000/photos.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+### Exercises index
+GET http://localhost:3000/exercises.json
+
+### Exercises create
+POST http://localhost:3000/exercises.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "width": 640,
-  "height": 480
+  "name": "Test exercise",
+  "description": "sweaty",
+  "image_url": "workout.com",
+  "video_url": "workout.com"
 }
+
+### Exercises show
+GET http://localhost:3000/exercises/1.json
+
+### Exercises update
+PATCH http://localhost:3000/exercises/10
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "image": "test"
+}
+
+### Exercises destroy
+DELETE http://localhost:3000/exercises/5
+Authorization: Bearer {{jwt}}
